@@ -19,6 +19,7 @@ var visitor = {
   userAgent: navigator.userAgent
 };
 
+
 var activeVisitorRef = activeVisitors.push(visitor, function () {
   activeVisitors.child(visitorId).once('value', function (snapshot) {
     visitor.arrivedAt = snapshot.child('arrivedAt').val();
@@ -29,6 +30,9 @@ var activeVisitorRef = activeVisitors.push(visitor, function () {
 });
 
 var visitorId = activeVisitorRef.name();
+
+// Remove the visitor from our active visitors when the visitor disconnects.
+
 activeVisitorRef.onDisconnect().remove();
 
 

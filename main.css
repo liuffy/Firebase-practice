@@ -37,3 +37,7 @@ body{
 	align-items: center;
 	align-content: stretch;
 }
+
+.analytics{
+	font-size:64px;
+}

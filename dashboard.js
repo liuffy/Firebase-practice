@@ -27,9 +27,10 @@ var $activeVisitors = $('#active-visitors');
 var activeVisitors = analytics.child('activeVisitors').endAt().limit(3);
 
 
-// . Every time a 'child_added' event is fired, we're adding a new <li> element to our initially
- // empty <ul> element. It contains the generated ID of our visitor and displays the visitor data
-  // in bullet points
+// Every time a 'child_added' event is fired, we're adding a new <li> element to our initially
+// empty <ul> element. It contains the generated ID of our visitor and displays the visitor data
+// in bullet points
+
 
 activeVisitors.on('child_added', function (snapshot) {
   var n = snapshot.name();
