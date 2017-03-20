@@ -1,0 +1,39 @@
+body{
+	font-family: 'Raleway', sans-serif;
+}
+
+.active{
+	color:#ff7f00;
+}
+
+.past{
+	color:gray;
+}
+
+.total-count{
+	font-weight:900;
+	font-size:32px;
+}
+
+.count{
+	color: #ff7f00;
+}
+
+
+.firebase{
+	color: #ff7f00;
+}
+
+.firebase-logo{
+	height:200px;
+	width:auto;
+}
+
+.index{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: stretch;
+}
